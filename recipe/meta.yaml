@@ -26,7 +26,6 @@ requirements:
     - cross-r-base {{ r_base }}  # [build_platform != target_platform]
     - r-cluster                  # [build_platform != target_platform]
     - r-cowplot                  # [build_platform != target_platform]
-    - r-fastdummies              # [build_platform != target_platform]
     - r-fitdistrplus             # [build_platform != target_platform]
     - r-future                   # [build_platform != target_platform]
     - r-future.apply             # [build_platform != target_platform]
@@ -40,8 +39,7 @@ requirements:
     - r-irlba                    # [build_platform != target_platform]
     - r-jsonlite                 # [build_platform != target_platform]
     - r-kernsmooth               # [build_platform != target_platform]
-    - r-leidenbase               # [build_platform != target_platform]
-    - r-lifecycle                # [build_platform != target_platform]
+    - r-leiden               # [build_platform != target_platform]
     - r-lmtest                   # [build_platform != target_platform]
     - r-mass                     # [build_platform != target_platform]
     - r-matrix                   # [build_platform != target_platform]
@@ -58,12 +56,10 @@ requirements:
     - r-rcpp                     # [build_platform != target_platform]
     - r-rcppannoy                # [build_platform != target_platform]
     - r-rcppeigen                # [build_platform != target_platform]
-    - r-rcpphnsw                 # [build_platform != target_platform]
     - r-rcppprogress             # [build_platform != target_platform]
     - r-reticulate               # [build_platform != target_platform]
     - r-rlang                    # [build_platform != target_platform]
     - r-rocr                     # [build_platform != target_platform]
-    - r-rspectra                 # [build_platform != target_platform]
     - r-rtsne                    # [build_platform != target_platform]
     - r-scales                   # [build_platform != target_platform]
     - r-scattermore              # [build_platform != target_platform]
@@ -89,7 +85,6 @@ requirements:
     - r-base
     - r-cluster
     - r-cowplot
-    - r-fastdummies
     - r-fitdistrplus
     - r-future
     - r-future.apply
@@ -103,8 +98,7 @@ requirements:
     - r-irlba
     - r-jsonlite
     - r-kernsmooth
-    - r-leidenbase
-    - r-lifecycle
+    - r-leiden >=0.3.1
     - r-lmtest
     - r-mass
     - r-matrix >=1.5_0
@@ -121,27 +115,24 @@ requirements:
     - r-rcpp >=1.0.7
     - r-rcppannoy >=0.0.18
     - r-rcppeigen
-    - r-rcpphnsw
     - r-rcppprogress
     - r-reticulate
     - r-rlang
     - r-rocr
-    - r-rspectra
     - r-rtsne
     - r-scales
     - r-scattermore >=1.2
-    - r-sctransform >=0.4.1
+    - r-sctransform >=0.4.0
     - r-seuratobject >=5.0.2
     - r-shiny
     - r-spatstat.explore
     - r-spatstat.geom
     - r-tibble
-    - r-uwot >=0.1.10
+    - r-uwot >=0.1.14
   run:
     - r-base
     - r-cluster
     - r-cowplot
-    - r-fastdummies
     - r-fitdistrplus
     - r-future
     - r-future.apply
@@ -155,8 +146,7 @@ requirements:
     - r-irlba
     - r-jsonlite
     - r-kernsmooth
-    - r-leidenbase
-    - r-lifecycle
+    - r-leiden >=0.3.1
     - r-lmtest
     - r-mass
     - r-matrix >=1.5_0
@@ -173,22 +163,20 @@ requirements:
     - r-rcpp >=1.0.7
     - r-rcppannoy >=0.0.18
     - r-rcppeigen
-    - r-rcpphnsw
     - r-rcppprogress
     - r-reticulate
     - r-rlang
     - r-rocr
-    - r-rspectra
     - r-rtsne
     - r-scales
     - r-scattermore >=1.2
-    - r-sctransform >=0.4.1
+    - r-sctransform >=0.4.0
     - r-seuratobject >=5.0.2
     - r-shiny
     - r-spatstat.explore
     - r-spatstat.geom
     - r-tibble
-    - r-uwot >=0.1.10
+    - r-uwot >=0.1.14
 
 test:
   commands:
